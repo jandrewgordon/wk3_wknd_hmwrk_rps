@@ -1,0 +1,36 @@
+body{
+    text-align: center;
+}
+
+#rules{
+    text-align: justify;
+    padding: 20px 300px;
+}
+
+#player-choices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+img{
+    width: 100px;
+}
+
+#button{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.gallery{
+    padding-bottom: 10%;
+}
+
+.radio{
+    display: flex;
+    padding-top: 10%;
+    justify-content: space-around;
+    
+}

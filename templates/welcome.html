@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Welcome</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors!</h1>
+    <h2>How to play:</h2>
+    <section id="rules">
+        <p>This is a a game for two players.</p>
+        <p>Player 1 chooses either "Rock", "Paper" or "Scissors" by selecting the corresponding button beneath the picture of their choice.</p>
+        <p>Player 2 pretends they can't see Player 1's move and clicks their own choice.</p>
+        <p>Press "Play!" to see the result.</p>
+    </section>
+    <form action="/game">
+    <input type="submit" value="Click here to play">
+    </form>
+</body>
+</html>

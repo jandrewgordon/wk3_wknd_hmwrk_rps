@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Rock Paper Scissors!</h1>
+        <form action="/game" method="post">
+            <section id="player-choices">
+            <div class="player">
+                <h2>Player 1</h2>
+                <div class="gallery">
+                <img src='/static/images/janken_gu.png' alt='rock' id="image">
+                <img src='/static/images/janken_pa.png' alt='paper' id="image">
+                <img src='/static/images/janken_choki.png' alt='scissors' id="image">
+                <div class="radio" id="player1">
+                    <input type="radio" name="player1_input" value="rock">
+                    <input type="radio" name="player1_input" value="paper">
+                    <input type="radio" name="player1_input" value="scissors">
+                </div>
+                </div>
+            </div>
+            <div>
+                <h2>Player 2</h2>
+                <div class="gallery">
+                <img src='/static/images/janken_gu.png' alt='rock' id="image">
+                <img src='/static/images/janken_pa.png' alt='paper' id="image">
+                <img src='/static/images/janken_choki.png' alt='rock' id="scissors">
+                <div class="radio" id="player2">
+                    <input type="radio" name="player2_input" value="rock">
+                    <input type="radio" name="player2_input" value="paper">
+                    <input type="radio" name="player2_input" value="scissors">
+                </div>    
+            </div>
+            </div>
+           </section>
+           <div id="button">
+           <input type="submit" value="Play!">
+           </div>
+        </form>
+</body>
+</html>
